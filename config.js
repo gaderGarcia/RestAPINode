@@ -1,3 +1,6 @@
 module.exports = {
-  secret : 'ilovescotchyscotch'
+  secret : 'ilovescotchyscotch',
+  database :{
+    user:'user'
+  }
 };
