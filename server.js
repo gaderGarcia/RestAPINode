@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 var port = process.env.PORT || 9000;
 app.set('superSecret',config.secret);
 app.use(morgan('dev'));
+app.use(express.static(path.join(__dirname,'..','app')));
 
 var router = express.Router();
 
